@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-family: comic neue;
+}
+table {
+    margin: 0 100px 0 100px;
+    text-align: center;
+    border: 1px solid blue;
+    padding: 100px;
+}
+
+table tr td {
+    border: 1px solid black;
+    padding: 40px;
+}
+
+.veg {
+    background-color: rgb(0, 138, 0);
+}
+
+.nonveg {
+    background-color: rgb(151, 0, 0);
+}
+
+table tr th {
+    border: 1px solid black;
+}
+
+.list {
+    font-size: 20px;
+    text-align:left;
+}
