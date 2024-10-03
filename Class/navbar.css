@@ -35,7 +35,13 @@
     text-decoration: none;
     color: #ffffff;
     padding: 5px;
+    transition: .2s ease-in-out;
   }
+  
+  .navbar a:hover {
+    color: #cccccc;
+  }
+
   .Login {
     padding: 15px;
     outline: none;
