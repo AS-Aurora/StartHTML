@@ -1,0 +1,13 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: white;
+    font-family: cursive;
+}
+
+td, th {
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+}
+
