@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a ducimus et quos ratione commodi quas officiis, quae repellendus quisquam, sapiente illo quidem.</p>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a ducimus et quos ratione commodi quas officiis, quae repellendus quisquam, sapiente illo quidem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a ducimus et quos ratione commodi quas officiis, quae repellendus quisquam, sapiente illo quidem.</p>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+</body>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(".hide").click(function() {
+        $(".p").hide(1000)
+    })
+    $(".show").click(function() {
+        $(".p").show(1000)
+    })
+    
+</script>
+</html>
