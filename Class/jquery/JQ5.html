@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="slidebtn">Slide Down</button>
+    <div class="slide" style="display: none; width: 300px; height: 200px; border: 1px solid; background-color: lawngreen;"></div>
+</body>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.slidebtn').click(function() {
+            if($('.slide').is(':hidden')) {
+                $('.slide').slideToggle(500)
+                setTimeout(() => {
+                    $(this).html('Slide Up')
+                }, 400)
+            }
+            else {
+                $('.slide').slideToggle(500)
+                setTimeout(() => {
+                    $(this).html('Slide Down')
+                }, 400);
+            }
+        })
+    })
+    
+        
+</script>
+</html>
