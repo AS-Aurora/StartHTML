@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      "
+    >
+      <div>
+        <h1>Set Contents and Attributes</h1>
+        <p id="one">This is the Original first Paragraph</p>
+        <p id="two">This is the Original second Paragraph</p>
+        <div style="display: flex; justify-content: center">
+          <input type="text" style="margin-bottom: 16px" />
+        </div>
+        <a href="https://www.google.com" target="_blank" style="display: block; margin-bottom: 16px;">Google</a>
+        <button class="text">Set New Text</button>
+        <button class="HTML">Set New HTML</button>
+        <button class="val">Set New Val</button>
+        <button class="link">Set New Link</button>
+      </div>
+    </div>
+  </body>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(()=>{
+        $('.text').click(()=> {
+            $('#one').text('This paragraph has been replaced.')
+        })
+        $('.HTML').click(()=> {
+            $('#two').html('<h2>This paragraph has been replaced.</h2>')
+        })
+        $('.val').click(()=> {
+            $('input').val('Hello')
+        })
+        $('.link').click(()=> {
+            $('a').attr('href', 'https://www.amazon.in')
+            $('a').text('Amazon')
+        })
+    })
+  </script>
+</html>

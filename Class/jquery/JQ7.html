@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM Manipulation Example</h1>
+    <h2 class="chain"><a href="www.google.com" target="_blank">Google</a></h2>
+    <!-- <button>Click</button> -->
+    <button class="b1">Text</button>
+    <button class="b2">HTML</button>
+    <button class="b3">Val</button>
+</body>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // $("button").click(function() {
+        //     $(".chain").hide(1000).show(1000).css('color', 'green')
+        // })
+        $('.b1').click(() => {
+            alert("Text: "+$('.chain').text())
+        })
+        $('.b2').click(() => {
+            alert("HTML: "+$('.chain').html())
+        })
+        $('.b3').click(() => {
+            alert("Val: "+$('.chain').val())
+        })
+    })
+</script>
+</html>
