@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>First</p>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <br>
+    <img src="https://imgs.search.brave.com/m3DI64jMJUH-Z-RmuiGTyoJdatyVhlELrzZYlzkPJg8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9kZWVw/YWkub3JnL3N0YXRp/Yy9pbWFnZXMvZG9s/cGhpbjEuc3Zn" alt="">
+    <br>
+    <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, nisi ab voluptatum voluptatem nulla quibusdam, ex, minima obcaecati modi praesentium quo dicta repellendus!</p>
+    <button class="b1">Append</button>
+    <button class="b2">Prepend</button>
+    <button class="b3">Before</button>
+    <button class="b4">After</button>
+    <button class="b5">Remove</button>
+    <button class="b6">Add</button>
+</body>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.b1').click(() => { 
+            $("img").append("<strong>New content</strong>")
+        })
+        $('.b2').click(() => { 
+            $("img").prepend("<strong>New content</strong>")
+        })
+        $('.b3').click(() => { 
+            $("img").before("<strong>New content</strong>")
+        })
+        $('.b4').click(() => { 
+            $("img").after("<strong>New content</strong>")
+        })
+        $('.b5').click(() => {
+            $('img').remove()
+        })
+        $('.b6').click(() => {
+            $('.p').add().css('background-color', "yellow")
+        })
+
+    })
+</script>
+</html>
