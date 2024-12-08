@@ -1,0 +1,63 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .container {
+        display: flex;
+        border: 4px solid lightblue;
+        padding: 12px;
+        border-radius: 12px;
+        background-color: green;
+        align-items: center;
+      }
+      .logo {
+        border: none;
+        background-color: white;
+        border-radius: 50%;
+        padding: 10px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">!!! Welcome 111</h1>
+    <h3 style="text-align: center">Buy a product while you are here</h3>
+    <div class="container">
+      <div class="logo"><img src="img1.jpg" alt="" width="20px" /></div>
+      <div class="form">
+        <input type="text" name="" class="input" />
+        <select name="BOOKS" class="select">
+          <option class="op1">BOOK1</option>
+          <option class="op2">BOOK2</option>
+          <option class="op3">BOOK3</option>
+        </select>
+        <button type="button" class="search">Search</button>
+        <span>[0] items in your cart</span>
+        <a href="#"><button>Home</button></a>
+        <a href="#">Special Offers</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".search").click(function () {
+        var change = $(".select").val();
+        alert(
+          change +
+            " is selected" +
+            "\n\n" +
+            $("input").val() +
+            " has been searched"
+        );
+      });
+      $(".select").change(function () {
+        var change = $(this).val();
+      });
+    });
+  </script>
+</html>
